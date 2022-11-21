@@ -3,11 +3,11 @@ apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 33
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 29
+        minSdkVersion 23
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -28,7 +28,7 @@ android {
                     from components.release
 
                     // You can then customize attributes of the publication as shown below.
-                    groupId = 'com.github.stfalcon'
+                    groupId = 'com.github.shakir915'
                     artifactId = 'stfalcon-imageviewer'
                     version = '1.0.1'
                 }
@@ -43,7 +43,7 @@ dependencies {
     api 'androidx.transition:transition:1.2.0'
     implementation 'com.github.chrisbanes:PhotoView:2.2.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-        implementation 'com.google.android.material:material:1.6.1'
+        implementation 'com.google.android.material:material:1.6.0'
 }
 
 repositories {

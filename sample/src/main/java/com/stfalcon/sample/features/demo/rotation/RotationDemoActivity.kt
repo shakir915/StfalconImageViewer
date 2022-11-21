@@ -36,7 +36,7 @@ class RotationDemoActivity : AppCompatActivity() {
         viewer.dismiss()
     }
 
-    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
         super.onRestoreInstanceState(savedInstanceState)
         if (savedInstanceState != null) {
             isDialogShown = savedInstanceState.getBoolean(KEY_IS_DIALOG_SHOWN)
