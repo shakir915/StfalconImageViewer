@@ -17,9 +17,12 @@
 package com.stfalcon.imageviewer.viewer.dialog
 
 import android.content.Context
+import android.graphics.Color
 import android.view.KeyEvent
+import android.view.WindowManager
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
+import androidx.core.view.WindowCompat
 import com.stfalcon.imageviewer.R
 import com.stfalcon.imageviewer.viewer.builder.BuilderData
 import com.stfalcon.imageviewer.viewer.view.ImageViewerView
